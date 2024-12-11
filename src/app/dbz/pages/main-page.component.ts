@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Character } from '../interfaces/characters.interface';
 
 @Component({
   standalone: false,
@@ -7,4 +8,18 @@ import { Component } from '@angular/core';
 })
 
 export class DBZComponent{
+
+  public characters: Character[] = [{
+    name: 'Krillin',
+    power: 501,
+  },{
+    name: 'Goku',
+    power: 10001,
+  },{
+    name: 'Vegeta',
+    power: 9000
+  }
+];
+
+
 }
