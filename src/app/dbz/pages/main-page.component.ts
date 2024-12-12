@@ -22,7 +22,11 @@ export class DBZComponent{
 ];
 
   onNewCaracter(character:Character):void{
-    console.log(character);
+    this.characters.push(character);
+  }
+
+  onDelete(id:Number):void{
+    console.log({id})
   }
 
 }

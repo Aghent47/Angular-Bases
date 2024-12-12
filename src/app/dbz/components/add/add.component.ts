@@ -22,11 +22,10 @@ export class AddComponent {
     console.log(this.character)
     if(this.character.name.length === 0) return;
 
-    this.onNewCharacter.emit(this.character); // emitir el objeto ingresado 
+    this.onNewCharacter.emit(this.character); // emitir el objeto ingresado
 
   //limpiar los inputs
-  this.character.name = '';
-  this.character.power = 0;
+  this.character = {name: '', power: 0};
 
   }
 
