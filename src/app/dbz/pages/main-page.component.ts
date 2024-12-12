@@ -21,5 +21,8 @@ export class DBZComponent{
   }
 ];
 
+  onNewCaracter(character:Character):void{
+    console.log(character);
+  }
 
 }
